@@ -6,7 +6,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 /**
  * Console log message
  */
- console.log('**************************** 🚚 \n  We are in production mode!');
+ console.log("*************************** \n 🚚 🚚 🚚 🚚 🚚 🚚 🚚 🚚 🚚  \n We are in production mode!");
 
 
 /**

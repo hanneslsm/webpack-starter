@@ -7,3 +7,7 @@
 
  `npm start` will start the dev mode, including local server with Browser Sync.
  `npm run build` will build the files, including filenames with content hashs.
+
+
+## Branches
+This repo also has  a branch for where postcss and tailwind is configured.

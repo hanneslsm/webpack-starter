@@ -7,7 +7,7 @@ const Autoprefixer = require('autoprefixer');
 /**
  * Console log message
  */
-console.log('**************************** 💻 \n We are in development mode!');
+ console.log("*************************** \n 💻 💻 💻 💻 💻 💻 💻 💻 💻   \n We are in development mode!");
 
 /**
  * VARIABLES
