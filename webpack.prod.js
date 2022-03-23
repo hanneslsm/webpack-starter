@@ -13,7 +13,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
  * VARIABLES
  */
 const localDomain = "http://localhost:8888"; // Local Development URL for BrowserSync. Change if needed.
-const outputPath = "dist";
+const outputPath = "assets/dist";
 
 module.exports = merge(common, {
   mode: "production",
@@ -27,10 +27,10 @@ module.exports = merge(common, {
    * PLUGINS
    */
   plugins: [
-    /* MiniCssExtract */
-    new MiniCssExtractPlugin({
-      filename: "[name]-[contenthash].css",
-    }),
+        /* MiniCssExtract */
+        new MiniCssExtractPlugin({
+          filename: "[name]-[contenthash].css",
+        }), 
   ],
 
   /**
@@ -42,20 +42,11 @@ module.exports = merge(common, {
       {
         test: /\.s?[c]ss$/i,
         use: [
-          { loader: MiniCssExtractPlugin.loader }, // 4. Extract css into files
-          { loader: "css-loader" }, // 3. Turns css into commonjs
-          { loader: "postcss-loader", // 2. Use Post-css with autoprefixer to make the code compatible to more browsers
-            options: {
-              postcssOptions: {
-                plugins: ["autoprefixer", "postcss-preset-env"]
-              }
-            }
-          },
-          { loader: "sass-loader"}, // 1. Turns scss into css
-          
+          { loader: MiniCssExtractPlugin.loader }, // 3. Extract css into files 
+          { loader: "css-loader" }, // 2. Turns css into commonjs
+          { loader: "postcss-loader" }, // 1. Use Post-css
         ],
       },
-
       /* Ressources */
       {
         test: /\.(jpg|jpeg|png|gif|woff|woff2|eot|ttf|svg)$/i,

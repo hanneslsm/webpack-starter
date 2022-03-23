@@ -4,22 +4,22 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 /**
  * VARIABLES
  */
-const jsPath = "./src/js";
-const htmlPath = "./src/html";
-const scssPath = "./src/scss";
-const cssPath = "./src/css";
-const imgPath = "./src/img";
+const jsPath = "./assets/src/js";
+const htmlPath = "./assets/src/html";
+const scssPath = "./assets/src/scss";
+const cssPath = "./assets/src/css";
+const imgPath = "./assets/src/img";
 
 module.exports = {
   /**
    * ENTRY POINTS
    */
-
   entry: {
     main: jsPath + "/index.js",
     vendor: jsPath + "/vendor.js",
     style: scssPath + "/style.scss",
   },
+
   /**
    * PLUGINS
    */
