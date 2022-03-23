@@ -6,7 +6,8 @@ const BrowserSyncPlugin = require("browser-sync-webpack-plugin");
 /**
  * Console log message
  */
-console.log("*************************** \n 💻 💻 💻 💻 💻 💻 💻 💻 💻   \n We are in development mode!");
+ console.log("*************************** \n 💻 💻 💻 💻 💻 💻 💻 💻 💻   \n We are in development mode!");
+
 
 /**
  * VARIABLES
